@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>invest-spread</title>
+</head>
+<body>
+    <header>
+        <h1>Invest Spread</h1>
+    </header>
+
+    <article class="stock-input">
+        <h2>Input new stocks:</h2>
+        <label for="text">Input new stock:</label>
+        <input type="text" id="nameInput">
+        <label for="number">Input price for new stock</label>
+        <input type="number" id="priceInput">
+        <select name="currency" id="currencyInput">
+            <option value="kr" selected>SEK</option>
+            <option value="$">USD</option>
+            <option value="nok">NOK</option>
+            <option value="dkk">DKK</option>
+        </select>
+        <select name="sector" id="sectorInput">
+            <option value="" disabled selected>Choose Sector</option>
+            <option value="Technology">Technology</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Financials">Financials</option>
+            <option value="Consumer_discretionary">Consumer Discretionary</option>
+            <option value="Consumer_staples">Consumer Staples</option>
+            <option value="Energy">Energy</option>
+            <option value="Industrials">Industrials</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Materials">Materials</option>
+            <option value="Real_estate">Real Estate</option>
+            <option value="Communication_services">Communication Services</option>
+        </select>       
+        <button id="saveStock">Save</button>
+    </article>
+
+    <article class="stock-window">
+        <h2>Your stocks:</h2>
+        <ol class="stock-list"></ol>
+    </article>
+
+    <script src="app.js"></script>
+</body>
+</html>

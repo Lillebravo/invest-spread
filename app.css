@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(70, 100, 90);
+}
+
+.stock-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: rgb(169, 229, 209);
+    width: 40vw;
+}
+
+.stock-window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 1em;
+    background-color: rgb(169, 229, 209);
+    width: 40vw;
+}
