@@ -1,14 +1,19 @@
-header {
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;  
+}
+
+header {
     align-items: flex-start;
     color: rgb(70, 100, 90);
 }
 
 .stock-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inherit;
     flex-direction: column;
     gap: 1em;
     border-radius: 1em;
@@ -17,10 +22,6 @@ header {
 }
 
 .stock-window {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     gap: 0.5em;
     border-radius: 1em;
     background-color: rgb(169, 229, 209);
